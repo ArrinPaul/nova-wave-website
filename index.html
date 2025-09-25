@@ -4,6 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  
   <title>NovaWave — Think Different. Work Smarter.</title>
   <meta name="description" content="Experience the future of productivity with NovaWave's revolutionary Apple-inspired design and cutting-edge features.">
   <meta name="keywords" content="data analytics, business intelligence, AI insights, real-time analytics, productivity tools">
@@ -378,9 +387,7 @@
 
       <div class="pricing-toggle">
         <span class="toggle-label">Monthly</span>
-        <button class="toggle-switch" id="pricingToggle">
-          <span class="toggle-slider"></span>
-        </button>
+        <input type="checkbox" class="toggle-switch" id="pricingToggle" aria-label="Switch to annual billing">
         <span class="toggle-label">
           Annual 
           <span class="discount-badge">Save 20%</span>
@@ -393,8 +400,8 @@
             <h3>Starter</h3>
             <div class="price">
               <span class="currency">$</span>
-              <span class="amount monthly">0</span>
-              <span class="amount annual" style="display: none;">0</span>
+              <span class="amount monthly-price">0</span>
+              <span class="amount annual-price hidden">0</span>
               <span class="period">/month</span>
             </div>
             <p>Perfect for individuals getting started</p>
@@ -422,8 +429,8 @@
             <h3>Pro</h3>
             <div class="price">
               <span class="currency">$</span>
-              <span class="amount monthly">19</span>
-              <span class="amount annual" style="display: none;">15</span>
+              <span class="amount monthly-price">19</span>
+              <span class="amount annual-price hidden">15</span>
               <span class="period">/month</span>
             </div>
             <p>Ideal for growing teams and businesses</p>
@@ -458,8 +465,8 @@
             <h3>Enterprise</h3>
             <div class="price">
               <span class="currency">$</span>
-              <span class="amount monthly">49</span>
-              <span class="amount annual" style="display: none;">39</span>
+              <span class="amount monthly-price">49</span>
+              <span class="amount annual-price hidden">39</span>
               <span class="period">/month</span>
             </div>
             <p>For large teams with advanced needs</p>

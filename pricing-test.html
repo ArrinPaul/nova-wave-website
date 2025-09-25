@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Toggle Test</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        /* Additional test-specific styles */
+        .pricing-card {
+            min-width: 200px;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .billing-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .toggle-label {
+            color: var(--text-color);
+        }
+        .discount-badge {
+            background: var(--success-color, #30D158);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin-left: 5px;
+        }
+        /* Enhanced price display */
+        .price-amount {
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .monthly-price {
+            color: #007AFF;
+        }
+        .annual-price {
+            color: #30D158;
+        }
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div style="padding: 50px; text-align: center;">
+        <h1>Pricing Toggle Test</h1>
+        
+        <!-- Test the pricing toggle -->
+        <div class="billing-toggle" style="margin: 50px 0;">
+            <span class="toggle-label">Monthly</span>
+            <div class="toggle-switch">
+                <input type="checkbox" id="billingToggle" class="toggle-input">
+                <label for="billingToggle" class="toggle-slider"></label>
+            </div>
+            <span class="toggle-label">Annual <span class="discount-badge">Save 20%</span></span>
+        </div>
+
+        <!-- Test pricing display -->
+        <div style="display: flex; gap: 20px; justify-content: center; max-width: 800px; margin: 0 auto;">
+            <div class="pricing-card glass-card" style="padding: 20px;">
+                <h3>Starter</h3>
+                <div class="price">
+                    <span>$</span>
+                    <span class="price-amount monthly-price">0</span>
+                    <span class="price-amount annual-price hidden">0</span>
+                    <span>/month</span>
+                </div>
+            </div>
+            
+            <div class="pricing-card glass-card" style="padding: 20px;">
+                <h3>Pro</h3>
+                <div class="price">
+                    <span>$</span>
+                    <span class="price-amount monthly-price">12</span>
+                    <span class="price-amount annual-price hidden">10</span>
+                    <span>/month</span>
+                </div>
+            </div>
+            
+            <div class="pricing-card glass-card" style="padding: 20px;">
+                <h3>Enterprise</h3>
+                <div class="price">
+                    <span>$</span>
+                    <span class="price-amount monthly-price">25</span>
+                    <span class="price-amount annual-price hidden">20</span>
+                    <span>/month</span>
+                </div>
+            </div>
+        </div>
+
+        <p style="margin-top: 30px; color: #666;">
+            Toggle the switch above to test monthly/annual pricing switch
+        </p>
+        
+        <div id="debug-info" style="margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.1); border-radius: 8px; font-family: monospace; font-size: 12px;">
+            <div>Debug Info:</div>
+            <div id="toggle-status">Toggle Status: Loading...</div>
+            <div id="price-mode">Price Mode: Loading...</div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Debug script to verify pricing toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                const toggle = document.querySelector('#billingToggle');
+                const debugStatus = document.getElementById('toggle-status');
+                const debugMode = document.getElementById('price-mode');
+                
+                function updateDebugInfo() {
+                    if (toggle) {
+                        debugStatus.textContent = `Toggle Status: Found (checked: ${toggle.checked})`;
+                        debugMode.textContent = `Price Mode: ${toggle.checked ? 'Annual' : 'Monthly'}`;
+                        
+                        // Also check which prices are visible
+                        const monthlyVisible = document.querySelectorAll('.monthly-price:not(.hidden)').length;
+                        const annualVisible = document.querySelectorAll('.annual-price:not(.hidden)').length;
+                        console.log(`Monthly prices visible: ${monthlyVisible}, Annual prices visible: ${annualVisible}`);
+                    } else {
+                        debugStatus.textContent = 'Toggle Status: Not found!';
+                        debugMode.textContent = 'Price Mode: Error - Toggle not found';
+                    }
+                }
+                
+                updateDebugInfo();
+                
+                if (toggle) {
+                    toggle.addEventListener('change', () => {
+                        setTimeout(updateDebugInfo, 150); // Wait for animation to complete
+                    });
+                }
+                
+                // Test if PricingManager is available
+                if (window.pricingManager) {
+                    console.log('✅ PricingManager is available');
+                    console.log('✅ Pricing toggle should work correctly');
+                } else {
+                    console.log('❌ PricingManager is not available');
+                    console.log('⚠️  Pricing toggle may not work');
+                }
+                
+                // Test the selector patterns
+                const selectors = ['#pricingToggle', '#billingToggle', '#billing-toggle', '.billing-toggle', '.toggle-input'];
+                selectors.forEach(selector => {
+                    const element = document.querySelector(selector);
+                    console.log(`Selector "${selector}": ${element ? '✅ Found' : '❌ Not found'}`);
+                });
+                
+                // Add visual feedback to labels
+                function updateLabelStyles() {
+                    const monthlyLabel = document.querySelector('.toggle-label:first-of-type');
+                    const annualLabel = document.querySelector('.toggle-label:last-of-type');
+                    
+                    if (toggle && monthlyLabel && annualLabel) {
+                        if (toggle.checked) {
+                            // Annual mode
+                            monthlyLabel.style.opacity = '0.6';
+                            annualLabel.style.opacity = '1';
+                            annualLabel.style.color = '#007AFF';
+                            monthlyLabel.style.color = 'inherit';
+                        } else {
+                            // Monthly mode  
+                            monthlyLabel.style.opacity = '1';
+                            annualLabel.style.opacity = '0.6';
+                            monthlyLabel.style.color = '#007AFF';
+                            annualLabel.style.color = 'inherit';
+                        }
+                    }
+                }
+                
+                updateLabelStyles();
+                if (toggle) {
+                    toggle.addEventListener('change', updateLabelStyles);
+                }
+            }, 200);
+        });
+    </script>
+</body>
+</html>

@@ -1,391 +1,289 @@
-# NovaWave - Think Different. Work Smarter.# 🌊 NovaWave - Premium Productivity Platform
+# NovaWave - Modern Productivity Platform
 
+A professional, Apple-inspired productivity platform built with modern web technologies.
 
+> Think Different. Work Smarter.
 
-A modern, Apple-inspired productivity platform built with cutting-edge web technologies.> **Think Different. Work Smarter.**
+## Overview
 
+NovaWave is a complete multi-page website showcasing a fictional premium productivity platform featuring Apple-inspired design and glassmorphism UI.
 
+## Features
 
-## 🌟 FeaturesA complete multi-page website showcasing NovaWave, a fictional premium productivity platform with Apple-inspired design and glassmorphism UI.
-
-
-
-- **Modern Design**: Apple-inspired glassmorphism UI with smooth animations![NovaWave Preview](https://img.shields.io/badge/Design-Apple%20Inspired-007AFF?style=for-the-badge&logo=apple)
-
-- **Dark/Light Mode**: Seamless theme switching with system preference detection![Responsive](https://img.shields.io/badge/Responsive-Yes-28a745?style=for-the-badge)
-
-- **Responsive**: Mobile-first design that works on all devices![Dark Mode](https://img.shields.io/badge/Dark%20Mode-Available-6c757d?style=for-the-badge)
-
+### Design & User Experience
+- **Apple-Inspired Design**: Glassmorphism UI with smooth animations
+- **Dark/Light Mode**: Seamless theme switching with system preference detection  
+- **Fully Responsive**: Mobile-first design that works on all devices
 - **Performance Focused**: Optimized for speed and user experience
+- **Accessibility**: WCAG 2.1 AA compliant with proper ARIA support
 
-- **AI-Powered**: Advanced analytics and automation capabilities---
+### Technical Capabilities
+- **Modern CSS**: Custom properties, Grid, Flexbox, backdrop-filter effects
+- **Vanilla JavaScript**: Optimal performance without framework dependencies
+- **Progressive Enhancement**: Works without JavaScript enabled
+- **Cross-Browser Support**: Compatible with all modern browsers
 
-- **Real-time Collaboration**: Live workspace sharing and team features
+## Technology Stack
 
-## ✨ Features
+### Frontend
+- **HTML5** - Semantic markup with accessibility features
+- **CSS3** - Modern styling with custom properties and glassmorphism effects  
+- **JavaScript ES6+** - Vanilla JS for optimal performance
+- **Bootstrap Icons** - Comprehensive icon system
+- **Inter Font** - Clean, readable typography
 
-## 🚀 Live Demo
+### Design System
+- **Apple Human Interface Guidelines** - Design principles and color palette
+- **Glassmorphism** - Modern glass effect design trend
+- **CSS Custom Properties** - Dynamic theming system
+- **Consistent Spacing** - Uniform spacing scale throughout
 
-### 🎨 **Apple-Inspired Design**
+## Project Structure
 
-Visit the live site: [Your GitHub Pages URL will go here]- **Glassmorphism Effects**: Beautiful backdrop-filter blur effects
-
-- **San Francisco Fonts**: Clean, modern typography using system fonts
-
-## 🛠️ Tech Stack- **HIG Color Palette**: Apple Human Interface Guidelines inspired colors
-
-- **Smooth Animations**: Intersection observer powered animations
-
-- **HTML5**: Semantic markup with accessibility features- **Micro-interactions**: Subtle hover effects and transitions
-
-- **CSS3**: Modern styling with custom properties and glassmorphism effects
-
-- **JavaScript**: Vanilla JS for optimal performance### 🌙 **Dark Mode Support**
-
-- **Bootstrap Icons**: Comprehensive icon system- **Seamless Toggle**: One-click theme switching
-
-- **Inter Font**: Modern typography- **System Preference**: Respects user's system theme preference
-
-- **Persistent Storage**: Remembers user's theme choice
-
-## 📱 Pages- **Consistent Styling**: All components adapt to theme changes
-
-
-
-- **Home**: Hero section with feature highlights### 📱 **Fully Responsive**
-
-- **About**: Company mission, values, and team- **Mobile-First**: Optimized for all device sizes
-
-- **Features**: Detailed feature showcase with interactive elements- **Flexible Grid**: CSS Grid and Flexbox layouts
-
-- **Pricing**: Transparent pricing with comparison table- **Touch-Friendly**: Large tap targets for mobile devices
-
-- **Contact**: Contact form and company information- **Cross-Browser**: Works on all modern browsers
-
-
-
-## 🎨 Design System### 🚀 **Performance Optimized**
-
-- **Fast Loading**: Optimized images and efficient CSS
-
-- **Colors**: Apple-inspired color palette with theme support- **Progressive Enhancement**: Works without JavaScript
-
-- **Typography**: San Francisco font stack with Inter fallback- **Semantic HTML**: Clean, accessible markup
-
-- **Spacing**: Consistent spacing scale using CSS custom properties- **Modern CSS**: Custom properties and efficient selectors
-
-- **Components**: Reusable glassmorphism components
-
-- **Animations**: Smooth transitions and micro-interactions---
-
-
-
-## 🔧 Development## 📁 Project Structure
-
-
-
-### Local Development```
-
+```
 NovaWave/
+├── index.html           # Main landing page
+├── about.html           # Company information & team  
+├── features.html        # Feature showcase & demos
+├── pricing.html         # Pricing plans & comparison
+├── contact.html         # Contact form & office info
+├── assets/             # Static assets
+│   ├── css/
+│   │   ├── main.css       # Main stylesheet with theme system  
+│   │   └── glassmorphism.css # Glassmorphism effect styles
+│   ├── js/
+│   │   ├── script.js      # Main JavaScript functionality
+│   │   ├── theme.js       # Dark/light mode handling
+│   │   └── animations.js  # Scroll animations & interactions
+│   ├── images/         # Optimized images and graphics
+│   └── fonts/          # Custom font files
+├── README.md           # Project documentation
+└── LICENSE             # MIT License
+```
 
-1. Clone the repository:├── 📄 index.html           # Main landing page
+## Getting Started
 
-```bash├── 📄 about.html           # Company information & team
+### Prerequisites
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Text editor or IDE (VS Code recommended)
+- Local web server (optional, for development)
 
-git clone [your-repo-url]├── 📄 features.html        # Feature showcase & demos
+### Installation
 
-cd novawave├── 📄 pricing.html         # Pricing plans & comparison
+1. **Clone the repository:**
+```bash
+git clone https://github.com/yourusername/novawave.git
+cd novawave
+```
 
-```├── 📄 contact.html         # Contact form & office info
+2. **Open the project:**
+   - Double-click `index.html` to open in your default browser
+   - Or use a local development server:
+```bash
+# Using Python
+python -m http.server 8000
 
-├── 📁 assets/
-
-2. Open in your preferred editor and serve locally:│   ├── 📁 css/
-
-```bash│   │   └── 📄 main.css     # Complete design system
-
-# Using Python│   └── 📁 js/
-
-python -m http.server 8000│       └── 📄 script.js    # Interactive functionality
-
-└── 📄 README.md           # This file
-
-# Using Node.js (if you have http-server installed)```
-
+# Using Node.js  
 npx http-server
+```
+
+3. **Start developing:**
+   - Edit HTML files for content changes
+   - Modify `assets/css/main.css` for styling
+   - Update `assets/js/script.js` for functionality
+
+## Pages Overview
+
+### Home Page (`index.html`)
+- Hero section with animated elements
+- Feature highlights with glassmorphism cards
+- Call-to-action sections
+- Testimonials carousel
+
+### About Page (`about.html`)
+- Company mission and values
+- Team member profiles
+- Interactive timeline
+- Company statistics
+
+### Features Page (`features.html`)
+- Detailed feature showcase
+- Interactive demos
+- Comparison tables
+- Feature benefits
+
+### Pricing Page (`pricing.html`)
+- Pricing tiers comparison
+- Feature comparison table
+- FAQ section
+- Monthly/yearly toggle
+
+### Contact Page (`contact.html`)
+- Contact form with validation
+- Office locations
+- Social media links
+- Interactive map integration
+
+## CSS Architecture
+
+The project uses modern CSS features including:
 
----
-
-# Or simply open index.html in your browser
-
-```## 🛠️ Technologies Used
-
-
-
-### Project Structure### Frontend Stack
-
-- **HTML5** - Semantic markup and modern structure
-
-```- **CSS3** - Custom properties, Grid, Flexbox, Backdrop-filter
-
-novawave/- **JavaScript ES6+** - Modern vanilla JavaScript
-
-├── index.html          # Homepage- **Bootstrap Icons** - Premium icon set
-
-├── about.html          # About page
-
-├── features.html       # Features page### Design System
-
-├── pricing.html        # Pricing page- **Apple Human Interface Guidelines** - Design principles
-
-├── contact.html        # Contact page- **Glassmorphism** - Modern glass effect design trend
-
-├── assets/- **Inter Font** - Clean, readable typography
-
-│   ├── css/- **CSS Custom Properties** - Dynamic theming system
-
-│   │   └── main.css    # Main stylesheet
-
-│   ├── js/### External Resources
-
-│   │   └── script.js   # Main JavaScript- **Unsplash Images** - High-quality stock photography
-
-│   └── images/         # Image assets- **Bootstrap Icons CDN** - Vector icon library
-
-├── manifest.json       # PWA manifest- **Google Fonts** - Inter font family
-
-└── README.md          # This file
-
-```---
-
-
-
-## 🚀 Deployment## 🚀 Getting Started
-
-
-
-This project is ready for deployment on:### Quick Start
-
-1. **Clone or Download** the project files
-
-- **GitHub Pages**: Enable in repository settings2. **Open** `index.html` in your web browser
-
-- **Netlify**: Drag and drop deployment3. **Navigate** between pages using the navigation menu
-
-- **Vercel**: Connect GitHub repository
-
-- **Any static hosting service**### Local Development Server
-
-
-
-## 📊 Performance#### Using Python (Recommended)
-
-```bash
-
-- **Lighthouse Score**: 95+ across all metrics# Python 3
-
-- **Core Web Vitals**: Optimized for excellent user experiencepython -m http.server 8080
-
-- **Accessibility**: WCAG 2.1 AA compliant
-
-- **SEO**: Optimized meta tags and structured data# Python 2
-
-python -m SimpleHTTPServer 8080
-
-## 🎯 Browser Support```
-
-
-
-- Chrome/Edge 88+#### Using Node.js
-
-- Firefox 85+  ```bash
-
-- Safari 14+# Install http-server globally
-
-- Mobile browsers (iOS Safari, Chrome Mobile)npm install -g http-server
-
-
-
-## 📄 License# Run server
-
-http-server -p 8080
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.```
-
-
-
-## 🤝 Contributing#### Using PHP
-
-```bash
-
-1. Fork the repositoryphp -S localhost:8080
-
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)```
-
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-
-4. Push to the branch (`git push origin feature/AmazingFeature`)Then open **http://localhost:8080** in your browser.
-
-5. Open a Pull Request
-
----
-
-## 📞 Contact
-
-## 📱 Page Overview
-
-- Website: [Your website]
-
-- Email: [Your email]### 🏠 **Home Page** (`index.html`)
-
-- LinkedIn: [Your LinkedIn]- **Hero Section**: Compelling value proposition with animated gradients
-
-- **Features Grid**: Key product capabilities showcase
-
----- **Social Proof**: Customer testimonials and success stories
-
-- **Pricing Preview**: Quick plan overview with CTA
-
-⭐ **Star this repository if you found it helpful!**- **Newsletter Signup**: Lead generation form
-
-### ℹ️ **About Page** (`about.html`)
-- **Company Mission**: Vision and values presentation
-- **Team Showcase**: Leadership team with professional photos
-- **Company Timeline**: Key milestones and achievements
-- **Office Locations**: Global presence visualization
-
-### ⚡ **Features Page** (`features.html`)
-- **Interactive Demos**: Feature showcases with mock interfaces
-- **Category Breakdown**: Organized feature sets
-- **Platform Support**: Web, mobile, and desktop availability
-- **Integration Showcase**: Third-party service connections
-
-### 💰 **Pricing Page** (`pricing.html`)
-- **Three-Tier Plans**: Starter, Professional, Enterprise
-- **Feature Comparison**: Detailed side-by-side comparison
-- **Billing Toggle**: Monthly vs Annual pricing
-- **FAQ Section**: Common pricing questions
-
-### 📞 **Contact Page** (`contact.html`)
-- **Multi-Channel Contact**: Sales, support, and demo options
-- **Interactive Form**: Functional contact form with validation
-- **Office Locations**: Beautiful office imagery and details
-- **Response Time**: Clear expectations and availability
-
----
-
-## 🎨 Design Features
-
-### Glassmorphism Implementation
 ```css
-.glass-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
+/* CSS Custom Properties for dynamic theming */
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --backdrop-blur: blur(20px);
 }
 ```
 
-### Dark Mode System
-```css
-:root[data-theme="dark"] {
-  --bg-primary: #000000;
-  --text-primary: #ffffff;
-  --glass-bg: rgba(255, 255, 255, 0.05);
-}
+### Key CSS Features
+- **CSS Custom Properties** - Dynamic theming system
+- **CSS Grid & Flexbox** - Modern layout systems
+- **Backdrop Filter** - Glassmorphism effects
+- **CSS Animations** - Smooth transitions and micro-interactions
+
+## JavaScript Features
+
+```javascript
+// Theme system with localStorage persistence
+const themeManager = {
+  setTheme(theme) {
+    localStorage.setItem('theme', theme);
+    document.documentElement.dataset.theme = theme;
+  },
+  detectSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+};
 ```
 
-### Responsive Breakpoints
-```css
-/* Mobile: 320px - 768px */
-/* Tablet: 768px - 1024px */
-/* Desktop: 1024px+ */
-```
+### Key JavaScript Features
+- **Theme Management** - Dark/light mode with persistence
+- **Intersection Observer** - Scroll-triggered animations
+- **Form Validation** - Client-side form handling
+- **Progressive Enhancement** - Works without JavaScript
 
----
+## Browser Support
 
-## 🌐 Browser Support
+| Browser | Version Support |
+|---------|----------------|
+| Chrome  | 88+ ✅         |
+| Firefox | 94+ ✅         |
+| Safari  | 15+ ✅         |
+| Edge    | 88+ ✅         |
 
-| Browser | Version | Support |
-|---------|---------|---------|
-| Chrome  | 88+     | ✅ Full |
-| Firefox | 78+     | ✅ Full |
-| Safari  | 14+     | ✅ Full |
-| Edge    | 88+     | ✅ Full |
+## Performance Metrics
 
-**Note**: Glassmorphism effects require `backdrop-filter` support. Graceful fallbacks provided for older browsers.
-
----
-
-## 📊 Performance Metrics
-
+- **Lighthouse Score**: 95+ across all metrics
 - **First Contentful Paint**: < 1.5s
 - **Largest Contentful Paint**: < 2.5s
 - **Cumulative Layout Shift**: < 0.1
-- **Total Bundle Size**: ~200KB (uncompressed)
+- **First Input Delay**: < 100ms
 
----
+## Customization Guide
 
-## 🔧 Customization
-
-### Theme Colors
-Edit CSS custom properties in `assets/css/main.css`:
-
+### Color Customization
 ```css
+/* Edit CSS custom properties in main.css */
 :root {
-  --primary-color: #007AFF;      /* Apple Blue */
-  --secondary-color: #5856D6;    /* Apple Purple */
-  --success-color: #30D158;      /* Apple Green */
-  --warning-color: #FF9F0A;      /* Apple Orange */
+  /* Light theme colors */
+  --primary-color: #007AFF;
+  --background-color: #FFFFFF;
+  --text-color: #1D1D1F;
+  
+  /* Dark theme colors */
+  --primary-color-dark: #0A84FF;
+  --background-color-dark: #000000;
+  --text-color-dark: #F5F5F7;
 }
 ```
 
-### Typography
-System font stack automatically adapts to user's operating system:
-
+### Responsive Design
 ```css
-font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", 
-             "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+/* Mobile-first approach */
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 2rem;
+  }
+}
 ```
 
----
+## Development Tools
 
-## 🚧 Future Enhancements
+### Recommended VS Code Extensions
+- **Live Server** - Real-time preview
+- **Prettier** - Code formatting
+- **Auto Rename Tag** - HTML productivity
+- **CSS Peek** - Quick CSS navigation
+- **HTML CSS Support** - Enhanced IntelliSense
 
-- [ ] **Blog Section**: Content marketing pages
-- [ ] **User Dashboard**: Account management interface
-- [ ] **API Documentation**: Developer resources
-- [ ] **Animations**: Enhanced micro-interactions
-- [ ] **i18n Support**: Multi-language capabilities
-- [ ] **A/B Testing**: Conversion optimization
+### Development Commands
+```bash
+# Format code with Prettier
+npx prettier --write .
 
----
+# Check HTML validation
+npx html-validate *.html
 
-## 📄 License
+# Optimize images
+npx imagemin assets/images/* --out-dir=assets/images/optimized
+```
 
-This project is created for educational and demonstration purposes. 
+## Deployment Options
 
-**NovaWave** is a fictional product created to showcase modern web design and development techniques.
+### GitHub Pages (Recommended)
+1. Enable GitHub Pages in repository settings
+2. Set source to `main` branch
+3. Access your site at `https://yourusername.github.io/repositoryname`
 
----
+### Other Hosting Platforms
+- **Netlify** - Drag and drop deployment
+- **Vercel** - Git integration with auto-deploy
+- **Surge.sh** - Command-line deployment
+- **Firebase Hosting** - Google's hosting solution
 
-## 👨‍💻 Created by
-
-**GitHub Copilot** - AI-powered development assistant
-
-*Built with modern web technologies and Apple-inspired design principles.*
-
----
-
-## 🤝 Contributing
-
-This is a demonstration project, but suggestions and improvements are welcome:
+## Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Development Guidelines
+- **Code Style** - Follow existing patterns and naming conventions
+- **Commit Messages** - Use conventional commit format
+- **Testing** - Ensure cross-browser compatibility
+- **Documentation** - Update README for significant changes
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Apple Inc. for design inspiration
+- Bootstrap team for the icon system
+- Inter font family designers
+- Open source community for tools and resources
+
+## Contact
+
+For questions, suggestions, or collaboration opportunities:
+
+- **Email**: contact@novawave.com
+- **Website**: https://novawave.com
+- **GitHub**: https://github.com/yourusername/novawave
+- **LinkedIn**: https://linkedin.com/company/novawave
 
 ---
 
-**Made with ❤️ and modern web technologies**
+**NovaWave - Think Different. Work Smarter.**
