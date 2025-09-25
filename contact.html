@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — NovaWave</title>
+  <meta name="description" content="Get in touch with the NovaWave team. We're here to help you succeed.">
+  <meta name="keywords" content="contact novawave, customer support, get in touch, help, sales contact">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/contact.html">
+  <meta property="og:title" content="Contact — NovaWave">
+  <meta property="og:description" content="Get in touch with the NovaWave team. We're here to help you succeed.">
+  <meta property="og:image" content="https://yourwebsite.com/assets/images/contact-og.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourwebsite.com/contact.html">
+  <meta property="twitter:title" content="Contact — NovaWave">
+  <meta property="twitter:description" content="Get in touch with the NovaWave team. We're here to help you succeed.">
+  <meta property="twitter:image" content="https://yourwebsite.com/assets/images/contact-og.jpg">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%23007AFF'/><text x='90' y='110' text-anchor='middle' fill='white' font-size='60' font-family='system-ui'>N</text></svg>">
+  
+  <!-- San Francisco Font (System Font Stack) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#007AFF">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="NovaWave">
+</head>
+
+<body>
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle">
+    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
+      <i class="bi bi-sun-fill light-icon"></i>
+      <i class="bi bi-moon-fill dark-icon"></i>
+    </button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="index.html" class="nav-brand">
+          <div class="brand-icon">N</div>
+          <span>NovaWave</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="about.html" class="nav-link">About</a>
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="pricing.html" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+    </div>
+    
+    <div class="container">
+      <div class="page-header-content">
+        <div class="section-badge">Contact</div>
+        <h1 class="page-title">Get in <span class="gradient-text">touch</span></h1>
+        <p class="page-description">
+          Have questions about NovaWave? We're here to help you succeed. Reach out and let's start a conversation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Options -->
+  <section class="contact-options">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card glass-card">
+          <div class="contact-icon">
+            <i class="bi bi-chat-dots"></i>
+          </div>
+          <h3>Sales Inquiry</h3>
+          <p>Ready to get started? Our sales team will help you find the perfect plan for your needs.</p>
+          <div class="contact-action">
+            <a href="#contact-form" class="btn btn-primary">Contact Sales</a>
+            <div class="contact-info">
+              <span>Usually responds in 2 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon">
+            <i class="bi bi-headset"></i>
+          </div>
+          <h3>Customer Support</h3>
+          <p>Need help with your account? Our support team is ready to assist you.</p>
+          <div class="contact-action">
+            <a href="#contact-form" class="btn btn-secondary">Get Support</a>
+            <div class="contact-info">
+              <span>Available 24/7 for Enterprise</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon">
+            <i class="bi bi-calendar-check"></i>
+          </div>
+          <h3>Schedule Demo</h3>
+          <p>See NovaWave in action with a personalized demo tailored to your use case.</p>
+          <div class="contact-action">
+            <a href="#contact-form" class="btn btn-secondary">Book Demo</a>
+            <div class="contact-info">
+              <span>30-minute sessions available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section class="main-contact" id="contact-form">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+          <div class="form-header">
+            <h2>Send us a message</h2>
+            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+          </div>
+
+          <form class="contact-form glass-card" id="contactForm" method="POST" action="#" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a topic</option>
+                <option value="sales">Sales Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="demo">Schedule Demo</option>
+                <option value="partnership">Partnership</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <span class="checkmark"></span>
+                <span class="checkbox-text">I'd like to receive product updates and marketing emails</span>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+                <span>Send Message</span>
+                <i class="bi bi-arrow-right"></i>
+              </button>
+              <p class="form-note">
+                <i class="bi bi-shield-check"></i>
+                We'll respond within 24 hours • Your data is secure
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-section">
+          <div class="contact-info-card glass-card">
+            <h3>Other ways to reach us</h3>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="info-content">
+                <div class="info-label">Email</div>
+                <div class="info-value">hello@novawave.com</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="info-content">
+                <div class="info-label">Phone</div>
+                <div class="info-value">+1 (555) 123-4567</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="info-content">
+                <div class="info-label">Address</div>
+                <div class="info-value">
+                  123 Innovation Drive<br>
+                  San Francisco, CA 94105<br>
+                  United States
+                </div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div class="info-content">
+                <div class="info-label">Business Hours</div>
+                <div class="info-value">
+                  Monday - Friday: 9:00 AM - 6:00 PM PST<br>
+                  Saturday: 10:00 AM - 2:00 PM PST<br>
+                  Sunday: Closed
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="quick-actions glass-card">
+            <h4>Quick Actions</h4>
+            <div class="action-buttons">
+              <button class="action-btn" id="liveChatBtn">
+                <i class="bi bi-chat-dots"></i>
+                <div>
+                  <div class="action-title">Live Chat</div>
+                  <div class="action-desc">Available 9 AM - 6 PM PST</div>
+                </div>
+                <div class="status-indicator online"></div>
+              </button>
+              
+              <button class="action-btn" id="scheduleCallBtn">
+                <i class="bi bi-calendar-check"></i>
+                <div>
+                  <div class="action-title">Schedule Call</div>
+                  <div class="action-desc">Book a 15-min consultation</div>
+                </div>
+              </button>
+              
+              <a href="tel:+15551234567" class="action-btn">
+                <i class="bi bi-telephone"></i>
+                <div>
+                  <div class="action-title">Emergency Support</div>
+                  <div class="action-desc">24/7 for Enterprise</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links glass-card">
+            <h4>Follow us</h4>
+            <div class="social-grid">
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i class="bi bi-twitter"></i>
+                <span>Twitter</span>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <i class="bi bi-youtube"></i>
+                <span>YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Office Locations -->
+  <section class="office-locations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Offices</h2>
+        <p class="section-description">
+          Visit us at one of our global locations or connect with us remotely.
+        </p>
+      </div>
+
+      <div class="offices-grid">
+        <div class="office-card glass-card">
+          <div class="office-image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="San Francisco Office" loading="lazy">
+          </div>
+          <div class="office-content">
+            <h3>San Francisco</h3>
+            <p class="office-type">Headquarters</p>
+            <div class="office-address">
+              <i class="bi bi-geo-alt"></i>
+              <span>123 Innovation Drive, San Francisco, CA 94105</span>
+            </div>
+            <div class="office-contact">
+              <i class="bi bi-telephone"></i>
+              <span>+1 (555) 123-4567</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="office-card glass-card">
+          <div class="office-image">
+            <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="New York Office" loading="lazy">
+          </div>
+          <div class="office-content">
+            <h3>New York</h3>
+            <p class="office-type">East Coast Operations</p>
+            <div class="office-address">
+              <i class="bi bi-geo-alt"></i>
+              <span>456 Broadway, New York, NY 10013</span>
+            </div>
+            <div class="office-contact">
+              <i class="bi bi-telephone"></i>
+              <span>+1 (555) 987-6543</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="office-card glass-card">
+          <div class="office-image">
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="London Office" loading="lazy">
+          </div>
+          <div class="office-content">
+            <h3>London</h3>
+            <p class="office-type">European Operations</p>
+            <div class="office-address">
+              <i class="bi bi-geo-alt"></i>
+              <span>789 Tech Street, London EC2A 4DP, UK</span>
+            </div>
+            <div class="office-contact">
+              <i class="bi bi-telephone"></i>
+              <span>+44 20 7123 4567</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="contact-faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Quick Answers</h2>
+        <p class="section-description">
+          Find answers to common questions before reaching out.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">How quickly do you respond to inquiries?</h3>
+          <p class="faq-answer">
+            We typically respond to sales inquiries within 2 hours during business hours. 
+            Support requests are handled based on your plan's SLA.
+          </p>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">Can I schedule a demo?</h3>
+          <p class="faq-answer">
+            Absolutely! We offer personalized 30-minute demos where we'll show you how 
+            NovaWave can work for your specific use case and team needs.
+          </p>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">Do you offer phone support?</h3>
+          <p class="faq-answer">
+            Yes, phone support is available for Professional and Enterprise customers 
+            during business hours, with 24/7 availability for Enterprise plans.
+          </p>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">What information should I include in my message?</h3>
+          <p class="faq-answer">
+            Please include your company size, current tools you're using, specific challenges 
+            you're facing, and any timeline requirements for implementation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-icon">N</div>
+          <div class="brand-text">
+            <div class="brand-name">NovaWave</div>
+            <div class="brand-tagline">Think Different. Work Smarter.</div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Product</h4>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="#">Updates</a>
+            <a href="#">Security</a>
+          </div>
+
+          <div class="link-group">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div class="link-group">
+            <h4>Resources</h4>
+            <a href="#">Documentation</a>
+            <a href="#">Help Center</a>
+            <a href="#">Community</a>
+            <a href="#">Blog</a>
+          </div>
+
+          <div class="link-group">
+            <h4>Legal</h4>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Cookies</a>
+            <a href="#">Licenses</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <span>© <span id="currentYear">2025</span> NovaWave, Inc. All rights reserved.</span>
+        </div>
+        
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+  <script>
+    // Contact Form Handling with Enhanced Validation
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      
+      // Form validation functions
+      function validateEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+      
+      function validateForm() {
+        let isValid = true;
+        const requiredFields = contactForm.querySelectorAll('[required]');
+        
+        // Clear previous error states
+        contactForm.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+        contactForm.querySelectorAll('.error-message').forEach(el => el.remove());
+        
+        requiredFields.forEach(field => {
+          const value = field.value.trim();
+          
+          if (!value) {
+            showFieldError(field, 'This field is required');
+            isValid = false;
+          } else if (field.type === 'email' && !validateEmail(value)) {
+            showFieldError(field, 'Please enter a valid email address');
+            isValid = false;
+          } else if (field.name === 'message' && value.length < 10) {
+            showFieldError(field, 'Message must be at least 10 characters long');
+            isValid = false;
+          }
+        });
+        
+        return isValid;
+      }
+      
+      function showFieldError(field, message) {
+        field.classList.add('error');
+        const errorEl = document.createElement('div');
+        errorEl.className = 'error-message';
+        errorEl.textContent = message;
+        field.parentNode.appendChild(errorEl);
+      }
+      
+      // Real-time validation
+      contactForm.querySelectorAll('input, textarea, select').forEach(field => {
+        field.addEventListener('blur', function() {
+          if (this.hasAttribute('required') && !this.value.trim()) {
+            this.classList.add('error');
+          } else {
+            this.classList.remove('error');
+            const errorMsg = this.parentNode.querySelector('.error-message');
+            if (errorMsg) errorMsg.remove();
+          }
+        });
+        
+        field.addEventListener('input', function() {
+          if (this.classList.contains('error') && this.value.trim()) {
+            this.classList.remove('error');
+            const errorMsg = this.parentNode.querySelector('.error-message');
+            if (errorMsg) errorMsg.remove();
+          }
+        });
+      });
+      
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (!validateForm()) {
+          // Scroll to first error
+          const firstError = contactForm.querySelector('.error');
+          if (firstError) {
+            firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            firstError.focus();
+          }
+          return;
+        }
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
+        
+        // Log form data (for debugging)
+        console.log('Form submitted with data:', data);
+        
+        // Simulate form submission
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        
+        submitBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        // Simulate API call
+        setTimeout(() => {
+          submitBtn.innerHTML = '<i class="bi bi-check-circle-fill"></i> Message Sent!';
+          submitBtn.classList.add('success');
+          
+          // Show success message
+          showSuccessMessage();
+          
+          // Reset form after delay
+          setTimeout(() => {
+            contactForm.reset();
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            submitBtn.classList.remove('success');
+            hideSuccessMessage();
+          }, 4000);
+        }, 1500);
+      });
+      
+      function showSuccessMessage(title = 'Thank you for your message!', message = 'We\'ve received your inquiry and will respond within 24 hours.') {
+        const successMsg = document.createElement('div');
+        successMsg.className = 'success-notification glass-card';
+        successMsg.innerHTML = `
+          <div class="success-content">
+            <i class="bi bi-check-circle-fill"></i>
+            <div>
+              <h4>${title}</h4>
+              <p>${message}</p>
+            </div>
+          </div>
+        `;
+        document.body.appendChild(successMsg);
+        
+        setTimeout(() => successMsg.classList.add('show'), 100);
+      }
+      
+      function hideSuccessMessage() {
+        const successMsg = document.querySelector('.success-notification');
+        if (successMsg) {
+          successMsg.classList.remove('show');
+          setTimeout(() => successMsg.remove(), 300);
+        }
+      }
+      
+      // Copy contact info to clipboard
+      document.querySelectorAll('.info-value').forEach(item => {
+        if (item.textContent.includes('@') || item.textContent.includes('+')) {
+          item.style.cursor = 'pointer';
+          item.title = 'Click to copy';
+          
+          item.addEventListener('click', function() {
+            const text = this.textContent.trim();
+            navigator.clipboard.writeText(text).then(() => {
+              const originalText = this.textContent;
+              this.textContent = 'Copied!';
+              setTimeout(() => this.textContent = originalText, 1000);
+            });
+          });
+        }
+      });
+      
+      // Live Chat Simulation
+      const liveChatBtn = document.getElementById('liveChatBtn');
+      if (liveChatBtn) {
+        liveChatBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          // Prevent multiple clicks
+          if (this.disabled || document.querySelector('.contact-modal')) return;
+          
+          this.disabled = true;
+          showChatSimulation();
+          
+          // Re-enable after modal is shown
+          setTimeout(() => {
+            this.disabled = false;
+          }, 500);
+        });
+      }
+      
+      // Schedule Call Simulation
+      const scheduleCallBtn = document.getElementById('scheduleCallBtn');
+      if (scheduleCallBtn) {
+        scheduleCallBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          // Prevent multiple clicks
+          if (this.disabled || document.querySelector('.contact-modal')) return;
+          
+          this.disabled = true;
+          showScheduleModal();
+          
+          // Re-enable after modal is shown
+          setTimeout(() => {
+            this.disabled = false;
+          }, 500);
+        });
+      }
+      
+      function showChatSimulation() {
+        const modal = createModal('Live Chat', `
+          <div class="chat-simulation">
+            <div class="chat-header">
+              <div class="agent-info">
+                <div class="agent-avatar">👩‍💼</div>
+                <div>
+                  <div class="agent-name">Sarah Wilson</div>
+                  <div class="agent-status">Customer Success • Online</div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-messages">
+              <div class="message agent-message">
+                <div class="message-bubble">
+                  Hi! I'm Sarah from NovaWave. How can I help you today?
+                </div>
+                <div class="message-time">Just now</div>
+              </div>
+            </div>
+            <div class="chat-input">
+              <input type="text" placeholder="Type your message..." id="chatInput">
+              <button class="btn btn-primary" onclick="sendChatMessage()">Send</button>
+            </div>
+          </div>
+        `);
+        
+        // Auto-focus chat input
+        setTimeout(() => {
+          const chatInput = document.getElementById('chatInput');
+          if (chatInput) chatInput.focus();
+        }, 100);
+      }
+      
+      function showScheduleModal() {
+        const modal = createModal('Schedule a Call', `
+          <div class="schedule-form">
+            <p>Book a 15-minute consultation with our team.</p>
+            <div class="time-slots">
+              <h4>Available Today</h4>
+              <div class="slots-grid">
+                <button class="time-slot">2:00 PM</button>
+                <button class="time-slot">3:30 PM</button>
+                <button class="time-slot">4:15 PM</button>
+              </div>
+              <h4>Tomorrow</h4>
+              <div class="slots-grid">
+                <button class="time-slot">10:00 AM</button>
+                <button class="time-slot">11:30 AM</button>
+                <button class="time-slot">2:00 PM</button>
+              </div>
+            </div>
+            <div class="schedule-actions">
+              <button class="btn btn-primary" onclick="bookTimeSlot()">Book Selected Time</button>
+              <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+            </div>
+          </div>
+        `);
+        
+        // Time slot selection
+        modal.querySelectorAll('.time-slot').forEach(slot => {
+          slot.addEventListener('click', function() {
+            modal.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
+            this.classList.add('selected');
+          });
+        });
+      }
+      
+      function createModal(title, content) {
+        // Close any existing modals first
+        const existingModal = document.querySelector('.contact-modal');
+        if (existingModal) {
+          existingModal.remove();
+        }
+        
+        const modal = document.createElement('div');
+        modal.className = 'contact-modal';
+        modal.innerHTML = `
+          <div class="modal-backdrop" onclick="closeModal()"></div>
+          <div class="modal-content glass-card">
+            <div class="modal-header">
+              <h3>${title}</h3>
+              <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+              ${content}
+            </div>
+          </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        // Prevent body scroll when modal is open
+        document.body.style.overflow = 'hidden';
+        
+        // Use requestAnimationFrame for smooth animation
+        requestAnimationFrame(() => {
+          modal.classList.add('show');
+        });
+        
+        return modal;
+      }
+      
+      // Global functions for modal interactions
+      window.closeModal = function() {
+        const modal = document.querySelector('.contact-modal');
+        if (modal) {
+          modal.classList.remove('show');
+          
+        // Restore body scroll
+        document.body.style.overflow = '';
+        
+        setTimeout(() => {
+          if (modal.parentNode) {
+            modal.remove();
+          }
+        }, 300);
+      }
+    };
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && document.querySelector('.contact-modal.show')) {
+        closeModal();
+      }
+    });      window.sendChatMessage = function() {
+        const input = document.getElementById('chatInput');
+        if (input && input.value.trim()) {
+          const messagesContainer = document.querySelector('.chat-messages');
+          const userMessage = document.createElement('div');
+          userMessage.className = 'message user-message';
+          userMessage.innerHTML = `
+            <div class="message-bubble">${input.value}</div>
+            <div class="message-time">Just now</div>
+          `;
+          messagesContainer.appendChild(userMessage);
+          input.value = '';
+          
+          // Simulate agent response
+          setTimeout(() => {
+            const agentResponse = document.createElement('div');
+            agentResponse.className = 'message agent-message';
+            agentResponse.innerHTML = `
+              <div class="message-bubble">Thanks for your message! I'll connect you with the right team member. This is a demo - in reality, you'd be connected to our live support.</div>
+              <div class="message-time">Just now</div>
+            `;
+            messagesContainer.appendChild(agentResponse);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+          }, 1000);
+        }
+      };
+      
+      window.bookTimeSlot = function() {
+        const selectedSlot = document.querySelector('.time-slot.selected');
+        if (selectedSlot) {
+          showSuccessMessage('Call Scheduled!', `Your consultation is booked for ${selectedSlot.textContent}. Check your email for the meeting link.`);
+          closeModal();
+        } else {
+          alert('Please select a time slot first.');
+        }
+      };
+    });
+  </script>
+</body>
+
+</html>

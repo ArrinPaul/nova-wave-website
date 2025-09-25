@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — NovaWave</title>
+  <meta name="description" content="Choose the perfect NovaWave plan for your team. Start free, scale as you grow.">
+  <meta name="keywords" content="pricing plans, subscription, free trial, business pricing, team plans">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/pricing.html">
+  <meta property="og:title" content="Pricing — NovaWave">
+  <meta property="og:description" content="Choose the perfect NovaWave plan for your team. Start free, scale as you grow.">
+  <meta property="og:image" content="https://yourwebsite.com/assets/images/pricing-og.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourwebsite.com/pricing.html">
+  <meta property="twitter:title" content="Pricing — NovaWave">
+  <meta property="twitter:description" content="Choose the perfect NovaWave plan for your team. Start free, scale as you grow.">
+  <meta property="twitter:image" content="https://yourwebsite.com/assets/images/pricing-og.jpg">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%23007AFF'/><text x='90' y='110' text-anchor='middle' fill='white' font-size='60' font-family='system-ui'>N</text></svg>">
+  
+  <!-- San Francisco Font (System Font Stack) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#007AFF">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="NovaWave">
+</head>
+
+<body>
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle">
+    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
+      <i class="bi bi-sun-fill light-icon"></i>
+      <i class="bi bi-moon-fill dark-icon"></i>
+    </button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="index.html" class="nav-brand">
+          <div class="brand-icon">N</div>
+          <span>NovaWave</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="about.html" class="nav-link">About</a>
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="pricing.html" class="nav-link active">Pricing</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="pricing.html" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+    </div>
+    
+    <div class="container">
+      <div class="page-header-content">
+        <div class="section-badge">Pricing</div>
+        <h1 class="page-title">Simple, transparent <span class="gradient-text">pricing</span></h1>
+        <p class="page-description">
+          Choose the plan that works best for your team. Start free and upgrade as you grow. All plans include our core features with premium support options.
+        </p>
+        
+        <!-- Pricing Highlights -->
+        <div class="pricing-highlights">
+          <div class="highlight-item">
+            <i class="bi bi-shield-check"></i>
+            <span>14-day free trial</span>
+          </div>
+          <div class="highlight-item">
+            <i class="bi bi-credit-card"></i>
+            <span>No setup fees</span>
+          </div>
+          <div class="highlight-item">
+            <i class="bi bi-arrow-repeat"></i>
+            <span>Cancel anytime</span>
+          </div>
+        </div>
+        
+        <!-- Billing Toggle -->
+        <div class="billing-toggle" role="group" aria-labelledby="billing-toggle-label">
+          <span id="billing-toggle-label" class="sr-only">Choose billing frequency</span>
+          <span class="toggle-label" id="monthly-label">Monthly</span>
+          <div class="toggle-switch">
+            <input type="checkbox" id="billingToggle" class="toggle-input" aria-describedby="monthly-label annual-label" aria-label="Switch to annual billing">
+            <label for="billingToggle" class="toggle-slider"></label>
+          </div>
+          <span class="toggle-label" id="annual-label">Annual <span class="discount-badge">Save 20%</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Plans -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="pricing-grid">
+        
+        <!-- Starter Plan -->
+        <div class="pricing-card starter-plan">
+          <div class="plan-header">
+            <div class="plan-icon-wrapper">
+              <div class="plan-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+            </div>
+            <h3 class="plan-name">Starter</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price-amount monthly-price">0</span>
+              <span class="price-amount annual-price hidden">0</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="plan-description">Perfect for individuals and small teams getting started</p>
+          </div>
+
+          <div class="plan-features">
+            <ul class="features-list">
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Up to 5 team members</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>3 projects</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>10GB storage</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Basic support</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Mobile & web apps</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="plan-action">
+            <button class="btn btn-outline btn-full" aria-describedby="starter-info">
+              Get Started Free
+            </button>
+            <div class="plan-info" id="starter-info">
+              <span>No credit card required</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="pricing-card professional-plan featured">
+          <div class="popular-badge">
+            <i class="bi bi-star-fill"></i>
+            <span>Most Popular</span>
+          </div>
+          
+          <div class="plan-header">
+            <div class="plan-icon-wrapper">
+              <div class="plan-icon">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+            </div>
+            <h3 class="plan-name">Professional</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price-amount monthly-price">12</span>
+              <span class="price-amount annual-price hidden">10</span>
+              <span class="price-period">/ user / month</span>
+            </div>
+            <p class="plan-description">Ideal for growing teams that need advanced features</p>
+          </div>
+
+          <div class="plan-features">
+            <ul class="features-list">
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Up to 50 team members</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Unlimited projects</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>100GB storage per user</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Priority support</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Advanced analytics</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Custom integrations</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Team permissions</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>API access</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="plan-action">
+            <button class="btn btn-primary btn-full" aria-describedby="pro-info">
+              Start Free Trial
+            </button>
+            <div class="plan-info" id="pro-info">
+              <span>14-day free trial</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="pricing-card enterprise-plan">
+          <div class="plan-header">
+            <div class="plan-icon-wrapper">
+              <div class="plan-icon">
+                <i class="bi bi-building"></i>
+              </div>
+            </div>
+            <h3 class="plan-name">Enterprise</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price-amount monthly-price">25</span>
+              <span class="price-amount annual-price hidden">20</span>
+              <span class="price-period">/ user / month</span>
+            </div>
+            <p class="plan-description">For large organizations with advanced security needs</p>
+          </div>
+
+          <div class="plan-features">
+            <ul class="features-list">
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Unlimited team members</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Unlimited projects</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>1TB storage per user</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>24/7 dedicated support</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Advanced security & compliance</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>SSO & user provisioning</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Custom workflows</span>
+              </li>
+              <li class="feature-item">
+                <i class="bi bi-check2"></i>
+                <span>Dedicated account manager</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="plan-action">
+            <button class="btn btn-outline btn-full" aria-describedby="enterprise-info">
+              Contact Sales
+            </button>
+            <div class="plan-info" id="enterprise-info">
+              <span>Custom pricing available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise Solutions -->
+      <div class="enterprise-solutions">
+        <div class="enterprise-cta glass-card">
+          <div class="enterprise-icon">
+            <i class="bi bi-gear-wide-connected"></i>
+          </div>
+          <div class="enterprise-content">
+            <h3>Need Custom Solutions?</h3>
+            <p>We offer tailored enterprise solutions with dedicated support, advanced security, and custom integrations designed specifically for your organization.</p>
+            <div class="enterprise-action">
+              <a href="contact.html" class="btn btn-primary">Contact Sales Team</a>
+              <div class="enterprise-info">
+                <span>Schedule a consultation call</span>
+              </div>
+            </div>
+          </div>
+          <div class="enterprise-features">
+            <div class="feature-tag">
+              <i class="bi bi-cloud-arrow-up"></i>
+              <span>Custom Deployment</span>
+            </div>
+            <div class="feature-tag">
+              <i class="bi bi-palette"></i>
+              <span>White-label Options</span>
+            </div>
+            <div class="feature-tag">
+              <i class="bi bi-server"></i>
+              <span>Dedicated Infrastructure</span>
+            </div>
+            <div class="feature-tag">
+              <i class="bi bi-shield-shaded"></i>
+              <span>Advanced SLA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Comparison -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Compare Plans</h2>
+        <p class="section-description">
+          See what's included in each plan to make the right choice for your team.
+        </p>
+      </div>
+
+      <div class="pricing-table-wrapper glass-card">
+        <div class="table-responsive">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th class="feature-header">Features</th>
+                <th class="plan-header starter">
+                  <div class="plan-info">
+                    <div class="plan-name">Starter</div>
+                    <div class="plan-price">$0<span>/month</span></div>
+                    <div class="plan-badge free">Free</div>
+                  </div>
+                </th>
+                <th class="plan-header professional">
+                  <div class="plan-info">
+                    <div class="plan-name">Professional</div>
+                    <div class="plan-price">$12<span>/user/month</span></div>
+                    <div class="plan-badge popular">Most Popular</div>
+                  </div>
+                </th>
+                <th class="plan-header enterprise">
+                  <div class="plan-info">
+                    <div class="plan-name">Enterprise</div>
+                    <div class="plan-price">$25<span>/user/month</span></div>
+                    <div class="plan-badge premium">Premium</div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <!-- Core Features Section -->
+              <tr class="section-divider">
+                <td colspan="4" class="section-title">
+                  <i class="bi bi-layers"></i>
+                  Core Features
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="feature-name">Team Members</td>
+                <td class="feature-value">Up to 5</td>
+                <td class="feature-value">Up to 50</td>
+                <td class="feature-value highlight">Unlimited</td>
+              </tr>
+              
+              <tr class="alt-row">
+                <td class="feature-name">Projects</td>
+                <td class="feature-value">3</td>
+                <td class="feature-value highlight">Unlimited</td>
+                <td class="feature-value highlight">Unlimited</td>
+              </tr>
+              
+              <tr>
+                <td class="feature-name">Storage</td>
+                <td class="feature-value">10GB</td>
+                <td class="feature-value">100GB/user</td>
+                <td class="feature-value highlight">1TB/user</td>
+              </tr>
+              
+              <tr class="alt-row">
+                <td class="feature-name">Mobile & Web Apps</td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <!-- Advanced Features Section -->
+              <tr class="section-divider">
+                <td colspan="4" class="section-title">
+                  <i class="bi bi-gear-wide-connected"></i>
+                  Advanced Features
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="feature-name">Analytics & Reporting</td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <tr class="alt-row">
+                <td class="feature-name">API Access</td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <tr>
+                <td class="feature-name">Custom Integrations</td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <tr class="alt-row">
+                <td class="feature-name">Team Permissions</td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <!-- Security & Compliance Section -->
+              <tr class="section-divider">
+                <td colspan="4" class="section-title">
+                  <i class="bi bi-shield-check"></i>
+                  Security & Compliance
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="feature-name">SSL Encryption</td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <tr class="alt-row">
+                <td class="feature-name">Two-Factor Authentication</td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <tr>
+                <td class="feature-name">SSO Integration</td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <tr class="alt-row">
+                <td class="feature-name">SOC 2 Compliance</td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <!-- Support Section -->
+              <tr class="section-divider">
+                <td colspan="4" class="section-title">
+                  <i class="bi bi-headset"></i>
+                  Support
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="feature-name">Community Support</td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+              
+              <tr class="alt-row">
+                <td class="feature-name">Email Support</td>
+                <td class="feature-value">48h response</td>
+                <td class="feature-value highlight">24h response</td>
+                <td class="feature-value highlight">4h response</td>
+              </tr>
+              
+              <tr>
+                <td class="feature-name">Phone Support</td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value">Business hours</td>
+                <td class="feature-value highlight">24/7</td>
+              </tr>
+              
+              <tr class="alt-row">
+                <td class="feature-name">Dedicated Account Manager</td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-x-circle text-muted"></i></td>
+                <td class="feature-value"><i class="bi bi-check-circle-fill text-success"></i></td>
+              </tr>
+            </tbody>
+            
+            <tfoot>
+              <tr class="action-row">
+                <td class="feature-name">Get Started</td>
+                <td class="feature-value">
+                  <button class="btn btn-secondary btn-sm">Start Free</button>
+                </td>
+                <td class="feature-value">
+                  <button class="btn btn-primary btn-sm">Try Free</button>
+                </td>
+                <td class="feature-value">
+                  <button class="btn btn-secondary btn-sm">Contact Sales</button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">
+          Everything you need to know about NovaWave pricing and plans.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">Can I change plans anytime?</h3>
+          <p class="faq-answer">
+            Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, 
+            and we'll prorate any billing adjustments.
+          </p>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">Is there a free trial?</h3>
+          <p class="faq-answer">
+            Professional and Enterprise plans come with a 14-day free trial. No credit card required 
+            to start, and you can cancel anytime during the trial period.
+          </p>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">What payment methods do you accept?</h3>
+          <p class="faq-answer">
+            We accept all major credit cards (Visa, MasterCard, American Express), PayPal, 
+            and wire transfers for annual Enterprise plans.
+          </p>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">Do you offer discounts for nonprofits?</h3>
+          <p class="faq-answer">
+            Yes! We offer a 50% discount on all paid plans for qualified nonprofit organizations. 
+            Contact our sales team to learn more about our nonprofit program.
+          </p>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">What happens to my data if I cancel?</h3>
+          <p class="faq-answer">
+            You can export all your data at any time. After cancellation, we keep your data for 30 days 
+            in case you decide to reactivate your account.
+          </p>
+        </div>
+
+        <div class="faq-item glass-card">
+          <h3 class="faq-question">Is my data secure?</h3>
+          <p class="faq-answer">
+            Absolutely. We use enterprise-grade security with end-to-end encryption, regular security audits, 
+            and SOC 2 Type II compliance for Enterprise plans.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content glass-card">
+        <h2>Ready to get started?</h2>
+        <p>Join thousands of teams that trust NovaWave to boost their productivity.</p>
+        <div class="cta-actions">
+          <button class="btn btn-primary btn-large" onclick="scrollToPricing()">
+            <span>Choose Your Plan</span>
+            <i class="bi bi-arrow-up"></i>
+          </button>
+          <a href="contact.html" class="btn btn-secondary btn-large">
+            <span>Talk to Sales</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-icon">N</div>
+          <div class="brand-text">
+            <div class="brand-name">NovaWave</div>
+            <div class="brand-tagline">Think Different. Work Smarter.</div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Product</h4>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="#">Updates</a>
+            <a href="#">Security</a>
+          </div>
+
+          <div class="link-group">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div class="link-group">
+            <h4>Resources</h4>
+            <a href="#">Documentation</a>
+            <a href="#">Help Center</a>
+            <a href="#">Community</a>
+            <a href="#">Blog</a>
+          </div>
+
+          <div class="link-group">
+            <h4>Legal</h4>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Cookies</a>
+            <a href="#">Licenses</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <span>© <span id="currentYear">2024</span> NovaWave, Inc. All rights reserved.</span>
+        </div>
+        
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+  <script>
+    // Scroll to pricing function
+    function scrollToPricing() {
+      const pricingSection = document.querySelector('.pricing-section');
+      if (pricingSection) {
+        pricingSection.scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>
